@@ -1,0 +1,919 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>美区 Apple ID 注册与购买完整指南 2025 | 美国苹果账号教程</title>
+  <meta name="description" content="详细教程：如何获取美区 Apple ID，解锁 ChatGPT、TikTok 等美区专属 App。附上安全购买渠道推荐，适合中国用户快速上手。" />
+  <meta name="keywords" content="美区Apple ID,美国苹果账号,美区App Store,购买美区ID,ChatGPT下载,TikTok美区" />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="ReeGifts Guide" />
+  <link rel="canonical" href="https://hi-bill.github.io/appleid-us/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="美区 Apple ID 完整教程 2025 | 注册 & 安全购买指南" />
+  <meta property="og:description" content="手把手教你获取美区 Apple ID，下载 ChatGPT、TikTok、Claude 等美区专属 App，安全稳定。" />
+  <meta property="og:url" content="https://hi-bill.github.io/appleid-us/" />
+  <meta property="og:locale" content="zh_CN" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="美区 Apple ID 完整教程 2025" />
+  <meta name="twitter:description" content="手把手教你注册或购买美区 Apple ID，解锁全球 App。" />
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    "name": "如何获取美区 Apple ID",
+    "description": "本指南介绍注册或购买美区 Apple ID 的完整步骤，帮助用户解锁美区 App Store 专属应用。",
+    "step": [
+      {"@type": "HowToStep", "name": "了解美区 Apple ID", "text": "了解美区 Apple ID 的用途和与国区账号的区别。"},
+      {"@type": "HowToStep", "name": "准备材料", "text": "准备好邮箱、美国地址信息。"},
+      {"@type": "HowToStep", "name": "注册或购买", "text": "自行注册或通过可信渠道购买现成账号。"},
+      {"@type": "HowToStep", "name": "登录使用", "text": "在 App Store 切换账号，下载所需应用。"}
+    ]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:       #0a0c10;
+      --surface:  #111520;
+      --border:   #1e2535;
+      --accent:   #4f8ef7;
+      --accent2:  #7dd3fc;
+      --gold:     #f0b429;
+      --text:     #e2e8f0;
+      --muted:    #64748b;
+      --green:    #34d399;
+      --red:      #f87171;
+      --serif:    'Noto Serif SC', serif;
+      --sans:     'DM Sans', sans-serif;
+      --mono:     'DM Mono', monospace;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--sans);
+      font-size: 16px;
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+
+    /* ── NOISE OVERLAY ── */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    /* ── AMBIENT GLOW ── */
+    .glow-orb {
+      position: fixed;
+      border-radius: 50%;
+      filter: blur(120px);
+      pointer-events: none;
+      z-index: 0;
+      opacity: 0.12;
+    }
+    .glow-orb.blue  { width: 600px; height: 600px; background: #3b82f6; top: -200px; right: -150px; }
+    .glow-orb.teal  { width: 400px; height: 400px; background: #0ea5e9; bottom: 10%; left: -100px; }
+
+    /* ── NAV ── */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(10, 12, 16, 0.85);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border-bottom: 1px solid var(--border);
+      padding: 0 clamp(1rem, 5vw, 4rem);
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-family: var(--serif);
+      font-weight: 700;
+      font-size: 1rem;
+      color: var(--text);
+      text-decoration: none;
+      white-space: nowrap;
+    }
+    .nav-logo svg { flex-shrink: 0; }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 0.25rem;
+      list-style: none;
+      overflow-x: auto;
+    }
+    .nav-links a {
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 0.82rem;
+      font-weight: 500;
+      padding: 0.35rem 0.65rem;
+      border-radius: 6px;
+      transition: color .2s, background .2s;
+      white-space: nowrap;
+    }
+    .nav-links a:hover { color: var(--text); background: var(--border); }
+
+    .nav-cta {
+      background: var(--accent);
+      color: #fff !important;
+      border-radius: 8px !important;
+      padding: 0.38rem 0.9rem !important;
+      font-weight: 600 !important;
+      transition: opacity .2s !important;
+    }
+    .nav-cta:hover { opacity: 0.85; background: transparent !important; }
+
+    /* ── HERO ── */
+    .hero {
+      position: relative;
+      z-index: 1;
+      padding: clamp(4rem, 10vw, 8rem) clamp(1rem, 5vw, 4rem) clamp(3rem, 8vw, 6rem);
+      max-width: 860px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      background: rgba(79, 142, 247, 0.12);
+      border: 1px solid rgba(79, 142, 247, 0.3);
+      border-radius: 100px;
+      padding: 0.3rem 0.9rem;
+      font-size: 0.78rem;
+      color: var(--accent2);
+      font-weight: 500;
+      margin-bottom: 1.5rem;
+      animation: fadeUp .6s ease both;
+    }
+    .hero-badge span { display: inline-block; width: 6px; height: 6px; background: var(--green); border-radius: 50%; animation: pulse 2s infinite; }
+
+    .hero h1 {
+      font-family: var(--serif);
+      font-size: clamp(2rem, 5vw, 3.4rem);
+      font-weight: 700;
+      line-height: 1.25;
+      letter-spacing: -0.02em;
+      margin-bottom: 1.25rem;
+      animation: fadeUp .7s .1s ease both;
+    }
+    .hero h1 em { font-style: normal; color: var(--accent); }
+
+    .hero-sub {
+      font-size: clamp(1rem, 2vw, 1.15rem);
+      color: var(--muted);
+      max-width: 600px;
+      margin: 0 auto 2.5rem;
+      animation: fadeUp .7s .2s ease both;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 0.75rem;
+      justify-content: center;
+      flex-wrap: wrap;
+      animation: fadeUp .7s .3s ease both;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.7rem 1.6rem;
+      border-radius: 10px;
+      font-size: 0.92rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: transform .2s, opacity .2s, box-shadow .2s;
+      cursor: pointer;
+      border: none;
+    }
+    .btn:hover { transform: translateY(-2px); }
+    .btn-primary { background: var(--accent); color: #fff; box-shadow: 0 4px 24px rgba(79,142,247,.35); }
+    .btn-primary:hover { box-shadow: 0 8px 32px rgba(79,142,247,.5); }
+    .btn-ghost { background: transparent; color: var(--text); border: 1px solid var(--border); }
+    .btn-ghost:hover { background: var(--surface); }
+
+    /* ── STATS ── */
+    .stats-bar {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 0;
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      max-width: 900px;
+      margin: 0 auto 5rem;
+      animation: fadeUp .7s .4s ease both;
+    }
+    .stat-item {
+      flex: 1 1 160px;
+      padding: 1.5rem 1rem;
+      text-align: center;
+      border-right: 1px solid var(--border);
+    }
+    .stat-item:last-child { border-right: none; }
+    .stat-num { font-family: var(--mono); font-size: 1.8rem; font-weight: 500; color: var(--accent2); }
+    .stat-label { font-size: 0.78rem; color: var(--muted); margin-top: 0.2rem; }
+
+    /* ── LAYOUT ── */
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 0 clamp(1rem, 5vw, 3rem);
+      position: relative;
+      z-index: 1;
+    }
+
+    /* ── SECTION HEADER ── */
+    .section-label {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-family: var(--mono);
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--accent);
+      margin-bottom: 0.75rem;
+    }
+    .section-label::before { content: ''; display: inline-block; width: 18px; height: 1px; background: var(--accent); }
+
+    .section-title {
+      font-family: var(--serif);
+      font-size: clamp(1.5rem, 3vw, 2rem);
+      font-weight: 700;
+      line-height: 1.3;
+      margin-bottom: 0.75rem;
+    }
+
+    .section-desc { color: var(--muted); max-width: 560px; margin-bottom: 2.5rem; }
+
+    section { padding: 4rem 0; }
+
+    /* ── CARD ── */
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 1.75rem;
+      transition: border-color .25s, transform .25s, box-shadow .25s;
+    }
+    .card:hover {
+      border-color: rgba(79,142,247,.35);
+      transform: translateY(-3px);
+      box-shadow: 0 12px 40px rgba(0,0,0,.4);
+    }
+
+    /* ── WHY SECTION ── */
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.25rem;
+    }
+
+    .why-card .icon {
+      width: 42px;
+      height: 42px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.3rem;
+      margin-bottom: 1rem;
+    }
+    .why-card h3 { font-size: 1rem; font-weight: 600; margin-bottom: 0.4rem; }
+    .why-card p  { font-size: 0.88rem; color: var(--muted); }
+
+    /* ── APPS SHOWCASE ── */
+    .apps-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+    .app-chip {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 0.9rem 0.75rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.8rem;
+      font-weight: 500;
+      text-align: center;
+      transition: border-color .2s, transform .2s;
+    }
+    .app-chip:hover { border-color: var(--accent); transform: scale(1.04); }
+    .app-chip .app-icon { font-size: 1.8rem; }
+    .app-chip .app-tag {
+      font-size: 0.65rem;
+      color: var(--green);
+      background: rgba(52,211,153,.12);
+      border-radius: 100px;
+      padding: 0.1rem 0.45rem;
+    }
+
+    /* ── COMPARISON ── */
+    .compare-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.9rem;
+    }
+    .compare-table th {
+      padding: 0.9rem 1rem;
+      background: var(--surface);
+      color: var(--muted);
+      font-weight: 500;
+      font-size: 0.78rem;
+      text-align: left;
+      border-bottom: 1px solid var(--border);
+    }
+    .compare-table th:first-child { border-radius: 12px 0 0 0; }
+    .compare-table th:last-child  { border-radius: 0 12px 0 0; }
+    .compare-table td {
+      padding: 0.85rem 1rem;
+      border-bottom: 1px solid var(--border);
+      vertical-align: middle;
+    }
+    .compare-table tr:last-child td { border-bottom: none; }
+    .compare-table tr:hover td { background: rgba(255,255,255,.02); }
+    .check { color: var(--green); font-size: 1.1rem; }
+    .cross { color: var(--red);   font-size: 1.1rem; }
+    .half  { color: var(--gold);  font-size: 1.1rem; }
+
+    /* ── STEPS ── */
+    .steps-list { display: flex; flex-direction: column; gap: 1.25rem; counter-reset: steps; }
+    .step-item {
+      display: flex;
+      gap: 1.25rem;
+      align-items: flex-start;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 1.5rem;
+      transition: border-color .25s;
+    }
+    .step-item:hover { border-color: rgba(79,142,247,.3); }
+    .step-num {
+      flex-shrink: 0;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--accent), #818cf8);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--mono);
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: #fff;
+      counter-increment: steps;
+    }
+    .step-content h3 { font-size: 0.98rem; font-weight: 600; margin-bottom: 0.4rem; }
+    .step-content p  { font-size: 0.86rem; color: var(--muted); }
+
+    .tip-box {
+      background: rgba(240,180,41,.07);
+      border: 1px solid rgba(240,180,41,.25);
+      border-radius: 10px;
+      padding: 0.9rem 1.1rem;
+      font-size: 0.85rem;
+      color: #fcd34d;
+      margin-top: 0.75rem;
+      display: flex;
+      gap: 0.5rem;
+    }
+
+    /* ── FAQ ── */
+    .faq-list { display: flex; flex-direction: column; gap: 1rem; }
+    .faq-item {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+    .faq-q {
+      width: 100%;
+      background: none;
+      border: none;
+      color: var(--text);
+      font-family: var(--sans);
+      font-size: 0.95rem;
+      font-weight: 600;
+      padding: 1.1rem 1.25rem;
+      text-align: left;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 0.5rem;
+      transition: color .2s;
+    }
+    .faq-q:hover { color: var(--accent2); }
+    .faq-q .arrow {
+      flex-shrink: 0;
+      transition: transform .3s;
+      color: var(--muted);
+      font-size: 1.1rem;
+    }
+    .faq-item.open .faq-q .arrow { transform: rotate(45deg); }
+    .faq-a {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height .35s ease, padding .35s;
+      font-size: 0.88rem;
+      color: var(--muted);
+      padding: 0 1.25rem;
+    }
+    .faq-item.open .faq-a { max-height: 300px; padding: 0 1.25rem 1.1rem; }
+
+    /* ── CTA BANNER ── */
+    .cta-banner {
+      background: linear-gradient(135deg, #1e3a5f 0%, #0f2040 50%, #162035 100%);
+      border: 1px solid rgba(79,142,247,.3);
+      border-radius: 20px;
+      padding: clamp(2rem, 5vw, 3.5rem) clamp(1.5rem, 5vw, 3rem);
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      margin: 2rem 0 4rem;
+    }
+    .cta-banner::before {
+      content: '';
+      position: absolute;
+      top: -80px; left: 50%;
+      transform: translateX(-50%);
+      width: 400px; height: 400px;
+      background: radial-gradient(circle, rgba(79,142,247,.2) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .cta-banner h2 {
+      font-family: var(--serif);
+      font-size: clamp(1.4rem, 3vw, 2rem);
+      margin-bottom: 0.75rem;
+    }
+    .cta-banner p { color: var(--muted); margin-bottom: 2rem; font-size: 0.95rem; }
+    .cta-features {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 0.5rem 1.5rem;
+      margin-bottom: 2rem;
+      font-size: 0.84rem;
+      color: var(--accent2);
+    }
+    .cta-features span { display: flex; align-items: center; gap: 0.3rem; }
+
+    /* ── FOOTER ── */
+    footer {
+      position: relative;
+      z-index: 1;
+      border-top: 1px solid var(--border);
+      padding: 2.5rem clamp(1rem, 5vw, 4rem);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+    footer a { color: var(--muted); text-decoration: none; transition: color .2s; }
+    footer a:hover { color: var(--text); }
+
+    /* ── ANIMATIONS ── */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50%       { opacity: .4; }
+    }
+
+    /* ── SCROLL REVEAL ── */
+    .reveal { opacity: 0; transform: translateY(24px); transition: opacity .6s ease, transform .6s ease; }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+
+    /* ── MOBILE ── */
+    @media (max-width: 640px) {
+      .stat-item { flex: 1 1 45%; }
+      .nav-links { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="glow-orb blue"></div>
+<div class="glow-orb teal"></div>
+
+<!-- ── NAV ── -->
+<nav>
+  <a href="#" class="nav-logo" aria-label="首页">
+    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" aria-hidden="true">
+      <rect width="22" height="22" rx="6" fill="#4f8ef7"/>
+      <path d="M11 4.5C11 4.5 8 7 8 10.5C8 12.5 9.5 14 11 14C12.5 14 14 12.5 14 10.5C14 7 11 4.5 11 4.5Z" fill="white"/>
+      <circle cx="11" cy="17" r="1.5" fill="white"/>
+    </svg>
+    美区 Apple ID 指南
+  </a>
+  <ul class="nav-links">
+    <li><a href="#why">为什么需要</a></li>
+    <li><a href="#apps">热门应用</a></li>
+    <li><a href="#compare">注册 vs 购买</a></li>
+    <li><a href="#guide">操作教程</a></li>
+    <li><a href="#faq">常见问题</a></li>
+    <li><a href="https://www.reegifts.com/" target="_blank" rel="noopener" class="nav-cta">立即获取 →</a></li>
+  </ul>
+</nav>
+
+<!-- ── HERO ── -->
+<header class="hero" role="banner">
+  <div class="hero-badge">
+    <span></span> 持续更新 · 2025 年最新教程
+  </div>
+  <h1>解锁<em>美区 App Store</em><br/>从注册到使用全攻略</h1>
+  <p class="hero-sub">
+    ChatGPT、TikTok、Claude……这些你搜不到的 App，一个美区 Apple ID 统统搞定。
+    本指南教你如何安全、快速地获取并正确使用。
+  </p>
+  <div class="hero-actions">
+    <a href="#guide" class="btn btn-primary">📖 查看教程</a>
+    <a href="https://www.reegifts.com/" target="_blank" rel="noopener" class="btn btn-ghost">🛒 安全购买账号</a>
+  </div>
+</header>
+
+<!-- ── STATS ── -->
+<div class="stats-bar" aria-label="平台数据">
+  <div class="stat-item"><div class="stat-num">200万+</div><div class="stat-label">美区独有 App</div></div>
+  <div class="stat-item"><div class="stat-num">5分钟</div><div class="stat-label">购买后即可使用</div></div>
+  <div class="stat-item"><div class="stat-num">0风险</div><div class="stat-label">不影响国区账号</div></div>
+  <div class="stat-item"><div class="stat-num">24/7</div><div class="stat-label">持续可用</div></div>
+</div>
+
+<main>
+
+<!-- ── WHY ── -->
+<section id="why" class="container">
+  <div class="reveal">
+    <div class="section-label">必要性</div>
+    <h2 class="section-title">为什么需要美区 Apple ID？</h2>
+    <p class="section-desc">国区 App Store 因地区限制，许多全球热门应用无法下载。美区账号是打开这扇门最简单的方式。</p>
+  </div>
+  <div class="why-grid reveal">
+    <div class="card why-card">
+      <div class="icon" style="background:rgba(79,142,247,.15)">🤖</div>
+      <h3>下载 AI 工具</h3>
+      <p>ChatGPT、Claude、Perplexity、Midjourney 等 AI 应用仅在美区上架，国区无法搜索到。</p>
+    </div>
+    <div class="card why-card">
+      <div class="icon" style="background:rgba(52,211,153,.12)">🎵</div>
+      <h3>娱乐与社交</h3>
+      <p>TikTok 国际版（非抖音）、Spotify、YouTube Music、Twitch 等平台在美区功能更完整。</p>
+    </div>
+    <div class="card why-card">
+      <div class="icon" style="background:rgba(240,180,41,.1)">💳</div>
+      <h3>全球应用订阅</h3>
+      <p>使用美区账号可订阅 Apple One、iCloud+、Apple TV+ 等服务，有时价格比国区更优惠。</p>
+    </div>
+    <div class="card why-card">
+      <div class="icon" style="background:rgba(248,113,113,.1)">🔒</div>
+      <h3>隐私与安全</h3>
+      <p>不影响原有国区账号，双账号独立运行，下载美区 App 不会影响国区数据和购买记录。</p>
+    </div>
+  </div>
+</section>
+
+<!-- ── APPS ── -->
+<section id="apps" class="container">
+  <div class="reveal">
+    <div class="section-label">热门应用</div>
+    <h2 class="section-title">美区独家或优先上架的 App</h2>
+    <p class="section-desc">以下应用在中国区 App Store 无法搜索或功能受限，美区账号可直接下载。</p>
+  </div>
+  <div class="apps-grid reveal">
+    <div class="app-chip"><span class="app-icon">🤖</span>ChatGPT<span class="app-tag">AI</span></div>
+    <div class="app-chip"><span class="app-icon">✨</span>Claude<span class="app-tag">AI</span></div>
+    <div class="app-chip"><span class="app-icon">🎵</span>TikTok<span class="app-tag">娱乐</span></div>
+    <div class="app-chip"><span class="app-icon">🎧</span>Spotify<span class="app-tag">音乐</span></div>
+    <div class="app-chip"><span class="app-icon">📺</span>YouTube<span class="app-tag">视频</span></div>
+    <div class="app-chip"><span class="app-icon">🧭</span>Perplexity<span class="app-tag">AI</span></div>
+    <div class="app-chip"><span class="app-icon">🎮</span>Twitch<span class="app-tag">游戏</span></div>
+    <div class="app-chip"><span class="app-icon">📰</span>Pocket<span class="app-tag">阅读</span></div>
+    <div class="app-chip"><span class="app-icon">🌐</span>Brave<span class="app-tag">浏览器</span></div>
+    <div class="app-chip"><span class="app-icon">🔐</span>1Password<span class="app-tag">工具</span></div>
+    <div class="app-chip"><span class="app-icon">📱</span>Signal<span class="app-tag">通讯</span></div>
+    <div class="app-chip"><span class="app-icon">🎨</span>Canva<span class="app-tag">设计</span></div>
+  </div>
+</section>
+
+<!-- ── COMPARE ── -->
+<section id="compare" class="container">
+  <div class="reveal">
+    <div class="section-label">方案对比</div>
+    <h2 class="section-title">自行注册 vs 购买现成账号</h2>
+    <p class="section-desc">两种方式各有优劣，根据你的需求和时间选择最合适的方案。</p>
+  </div>
+  <div class="card reveal" style="padding: 0; overflow: hidden;">
+    <table class="compare-table" aria-label="注册与购买对比表">
+      <thead>
+        <tr>
+          <th>对比维度</th>
+          <th>🛠️ 自行注册</th>
+          <th>🛒 购买现成账号</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>上手速度</td><td><span class="half">⚡</span> 需要 30–60 分钟</td><td><span class="check">✓</span> 5 分钟内可用</td></tr>
+        <tr><td>操作难度</td><td><span class="half">⚠</span> 需要美国地址、邮箱</td><td><span class="check">✓</span> 直接拿到账号密码</td></tr>
+        <tr><td>账号归属</td><td><span class="check">✓</span> 完全自己掌控</td><td><span class="half">⚠</span> 供应商提供</td></tr>
+        <tr><td>稳定性</td><td><span class="check">✓</span> 长期稳定</td><td><span class="check">✓</span> 通常可长期使用</td></tr>
+        <tr><td>成本</td><td><span class="check">✓</span> 免费（仅注册）</td><td><span class="half">⚠</span> 少量费用</td></tr>
+        <tr><td>适合人群</td><td>有耐心、技术基础的用户</td><td>追求便捷的大多数用户</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- ── GUIDE ── -->
+<section id="guide" class="container">
+  <div class="reveal">
+    <div class="section-label">操作教程</div>
+    <h2 class="section-title">两种方式的完整步骤</h2>
+    <p class="section-desc">无论选择哪种方式，请参考以下步骤操作，确保账号安全稳定可用。</p>
+  </div>
+
+  <h3 style="font-size:1.05rem; color:var(--accent2); margin-bottom:1rem;" class="reveal">方式一：自行注册美区 Apple ID</h3>
+  <div class="steps-list reveal">
+    <div class="step-item">
+      <div class="step-num">1</div>
+      <div class="step-content">
+        <h3>准备一个全新的邮箱</h3>
+        <p>建议使用 Gmail 或 Outlook 邮箱（不要用已经绑定过 Apple ID 的邮箱）。全程使用英文填写信息。</p>
+      </div>
+    </div>
+    <div class="step-item">
+      <div class="step-num">2</div>
+      <div class="step-content">
+        <h3>前往 Apple 官网创建账号</h3>
+        <p>访问 <code style="background:var(--border);padding:.1rem .4rem;border-radius:4px;font-family:var(--mono);font-size:.83rem;">appleid.apple.com</code>，点击「创建 Apple ID」，地区务必选择 <strong>United States</strong>。</p>
+      </div>
+    </div>
+    <div class="step-item">
+      <div class="step-num">3</div>
+      <div class="step-content">
+        <h3>填写美国地址信息</h3>
+        <p>电话和地址可使用美国免税州（如俄勒冈州、蒙大拿州）地址，Google Maps 随机找一个真实地址填写即可。推荐免税州：Oregon（邮编 97xxx）。</p>
+        <div class="tip-box">💡 小贴士：选择免税州地址，后续在 App Store 购买付费 App 不会被额外征收消费税。</div>
+      </div>
+    </div>
+    <div class="step-item">
+      <div class="step-num">4</div>
+      <div class="step-content">
+        <h3>验证邮箱并完成注册</h3>
+        <p>Apple 会发送验证码到你的邮箱，输入后完成注册。此时账号已创建，但 App Store 支付方式需要下一步设置。</p>
+      </div>
+    </div>
+    <div class="step-item">
+      <div class="step-num">5</div>
+      <div class="step-content">
+        <h3>在 iPhone 上登录 App Store</h3>
+        <p>打开 App Store → 点击右上角头像 → 拉到底部「退出登录」→ 输入新注册的美区账号登录。<strong>注意：只在 App Store 切换，不要在「设置」里切换，以避免 iCloud 数据混淆。</strong></p>
+        <div class="tip-box">💡 不要在「设置 → 通用 → Apple ID」里登录美区账号，只在 App Store 单独切换即可。</div>
+      </div>
+    </div>
+    <div class="step-item">
+      <div class="step-num">6</div>
+      <div class="step-content">
+        <h3>选择「无」付款方式，开始下载免费 App</h3>
+        <p>首次登录 App Store 时，会提示审核账号信息，选择付款方式为「None」，即可免费下载 ChatGPT 等免费应用。</p>
+      </div>
+    </div>
+  </div>
+
+  <h3 style="font-size:1.05rem; color:var(--accent2); margin:2.5rem 0 1rem;" class="reveal">方式二：购买现成美区 Apple ID（推荐新手）</h3>
+  <div class="steps-list reveal">
+    <div class="step-item">
+      <div class="step-num">1</div>
+      <div class="step-content">
+        <h3>访问可信购买平台</h3>
+        <p>前往 <a href="https://www.reegifts.com/" target="_blank" rel="noopener" style="color:var(--accent);">ReeGifts.com</a> 选择美区 Apple ID 产品，查看包含的权益说明（账号登录信息、安全密保等）。</p>
+      </div>
+    </div>
+    <div class="step-item">
+      <div class="step-num">2</div>
+      <div class="step-content">
+        <h3>完成购买并获取账号信息</h3>
+        <p>支付成功后，平台会提供账号邮箱、密码等登录信息。注意妥善保存，切勿泄露给他人。</p>
+      </div>
+    </div>
+    <div class="step-item">
+      <div class="step-num">3</div>
+      <div class="step-content">
+        <h3>按方式一的步骤 5-6 登录使用</h3>
+        <p>只在 App Store 切换账号，登录后即可下载所需应用。建议下载完成后保持账号登录，避免频繁切换。</p>
+        <div class="tip-box">⚠️ 重要：收到账号后建议立即修改密码（如平台允许），增强账号安全性。</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── SECURITY TIPS ── -->
+<section class="container">
+  <div class="reveal">
+    <div class="section-label">安全建议</div>
+    <h2 class="section-title">使用美区 Apple ID 的注意事项</h2>
+  </div>
+  <div class="why-grid reveal">
+    <div class="card why-card">
+      <div class="icon" style="background:rgba(52,211,153,.12)">🔑</div>
+      <h3>仅在 App Store 切换</h3>
+      <p>不要在「设置」主账号里登录美区 ID，否则会影响 iCloud 照片、通讯录等数据同步。</p>
+    </div>
+    <div class="card why-card">
+      <div class="icon" style="background:rgba(79,142,247,.15)">🛡️</div>
+      <h3>开启双重认证</h3>
+      <p>注册完毕后务必开启 Two-Factor Authentication，防止账号被盗。验证设备选择你自己的 iPhone。</p>
+    </div>
+    <div class="card why-card">
+      <div class="icon" style="background:rgba(240,180,41,.1)">💰</div>
+      <h3>付款安全</h3>
+      <p>下载免费 App 无需绑定付款方式。如需购买付费 App，推荐使用美区 App Store 礼品卡充值，避免绑定银行卡。</p>
+    </div>
+    <div class="card why-card">
+      <div class="icon" style="background:rgba(248,113,113,.1)">📲</div>
+      <h3>勿共享账号</h3>
+      <p>美区 Apple ID 属于个人账号，切勿与他人共享，避免因异地登录触发账号安全保护机制。</p>
+    </div>
+  </div>
+</section>
+
+<!-- ── FAQ ── -->
+<section id="faq" class="container">
+  <div class="reveal">
+    <div class="section-label">常见问题</div>
+    <h2 class="section-title">你可能想知道的问题</h2>
+    <p class="section-desc">整理了用户最常问的问题，如有其他疑问欢迎参考购买平台的客服说明。</p>
+  </div>
+  <div class="faq-list reveal" role="list">
+    <div class="faq-item" role="listitem">
+      <button class="faq-q" aria-expanded="false">
+        使用美区 Apple ID 合法吗？
+        <span class="arrow" aria-hidden="true">+</span>
+      </button>
+      <div class="faq-a">
+        注册和使用美区 Apple ID 并不违法，Apple 允许用户在不同地区的 App Store 之间切换。但请注意遵守各应用的使用条款，部分服务可能有地区限制。
+      </div>
+    </div>
+    <div class="faq-item" role="listitem">
+      <button class="faq-q" aria-expanded="false">
+        切换美区账号会丢失国区数据吗？
+        <span class="arrow" aria-hidden="true">+</span>
+      </button>
+      <div class="faq-a">
+        只要你在 App Store 切换账号（不在「设置 → Apple ID」里切换），国区的 iCloud 数据、通讯录、照片都不会受到影响。两个账号完全独立运行。
+      </div>
+    </div>
+    <div class="faq-item" role="listitem">
+      <button class="faq-q" aria-expanded="false">
+        通过美区账号下载的 App 在国区能用吗？
+        <span class="arrow" aria-hidden="true">+</span>
+      </button>
+      <div class="faq-a">
+        可以。App 一旦下载到手机，正常使用即可，不受账号限制。但如果需要更新该 App，你需要再次登录美区账号进行更新操作。
+      </div>
+    </div>
+    <div class="faq-item" role="listitem">
+      <button class="faq-q" aria-expanded="false">
+        购买的美区 Apple ID 多久有效？
+        <span class="arrow" aria-hidden="true">+</span>
+      </button>
+      <div class="faq-a">
+        正规渠道购买的账号通常长期有效。建议购买后修改密码并绑定自己的恢复邮箱，提高账号安全性和使用寿命。具体售后政策请参考购买平台的说明。
+      </div>
+    </div>
+    <div class="faq-item" role="listitem">
+      <button class="faq-q" aria-expanded="false">
+        自行注册需要美国手机号吗？
+        <span class="arrow" aria-hidden="true">+</span>
+      </button>
+      <div class="faq-a">
+        通过 Apple 官网（appleid.apple.com）注册时，可以选择用邮箱验证而无需手机号。但如需开启双重认证，则建议使用接码平台获取一次性美国号码验证。
+      </div>
+    </div>
+    <div class="faq-item" role="listitem">
+      <button class="faq-q" aria-expanded="false">
+        美区礼品卡在哪里购买？
+        <span class="arrow" aria-hidden="true">+</span>
+      </button>
+      <div class="faq-a">
+        可在 ReeGifts.com 等平台购买美区 Apple 礼品卡（Gift Card），充值到美区账号余额后即可用于购买付费 App 或订阅服务，无需绑定信用卡。
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── CTA ── -->
+<section class="container">
+  <div class="cta-banner reveal">
+    <h2>省时省力，直接获取美区账号</h2>
+    <p>不想花时间折腾注册流程？通过 ReeGifts 几分钟内获取可用的美区 Apple ID，立即开始下载海外应用。</p>
+    <div class="cta-features">
+      <span>✓ 账号即用</span>
+      <span>✓ 支持支付宝/微信</span>
+      <span>✓ 全天候客服</span>
+      <span>✓ 同时提供礼品卡充值</span>
+    </div>
+    <a href="https://www.reegifts.com/" target="_blank" rel="noopener" class="btn btn-primary" style="font-size:1rem; padding: .85rem 2.5rem;">
+      前往 ReeGifts 查看方案 →
+    </a>
+    <p style="margin-top:1rem; font-size:.78rem; color:var(--muted);">* 本站为知识分享站点，购买相关事项请以 ReeGifts 平台为准</p>
+  </div>
+</section>
+
+</main>
+
+<!-- ── FOOTER ── -->
+<footer>
+  <div>© 2025 美区 Apple ID 指南 · 知识分享，仅供参考</div>
+  <div style="display:flex; gap:1.5rem;">
+    <a href="#why">为什么需要</a>
+    <a href="#guide">操作教程</a>
+    <a href="#faq">常见问题</a>
+    <a href="https://www.reegifts.com/" target="_blank" rel="noopener">购买账号</a>
+  </div>
+</footer>
+
+<script>
+  // ── SCROLL REVEAL ──
+  const reveals = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); } });
+  }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+  reveals.forEach(el => io.observe(el));
+
+  // ── FAQ ACCORDION ──
+  document.querySelectorAll('.faq-q').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const item = btn.closest('.faq-item');
+      const isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item.open').forEach(i => {
+        i.classList.remove('open');
+        i.querySelector('.faq-q').setAttribute('aria-expanded', 'false');
+      });
+      if (!isOpen) {
+        item.classList.add('open');
+        btn.setAttribute('aria-expanded', 'true');
+      }
+    });
+  });
+
+  // ── SMOOTH NAV ──
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', e => {
+      const target = document.querySelector(a.getAttribute('href'));
+      if (target) {
+        e.preventDefault();
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
+  });
+</script>
+</body>
+</html>
